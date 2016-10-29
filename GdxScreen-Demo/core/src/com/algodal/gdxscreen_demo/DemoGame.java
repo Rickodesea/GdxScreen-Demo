@@ -16,6 +16,7 @@ public class DemoGame extends GdxGame {
 		registerScreen("play", PlayScreen.class);
 		registerTransition("trans", GdxTransition.class);
 		attachAssetToScreen("play", "bad");
+		System.out.println("initialized");
 	}
 
 	@Override
