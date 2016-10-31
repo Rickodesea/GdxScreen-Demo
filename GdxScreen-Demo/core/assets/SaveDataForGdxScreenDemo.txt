@@ -1,0 +1,3 @@
+<group name="TestingGdxSave" time="21:1279:76760" count="1">
+	<unit id="0">{class:com.algodal.gdxscreen_demo.SaveDataA,dog:{}}</unit>
+</group>
