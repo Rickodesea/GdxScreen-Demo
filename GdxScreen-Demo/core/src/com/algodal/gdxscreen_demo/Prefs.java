@@ -8,7 +8,33 @@ package com.algodal.gdxscreen_demo;
 public class Prefs {
 	public String name = "Wally";
 	public String description = "Test for GdxPrefs";
-	public int number = 5;
-	public int count = 100;
-	public boolean choose = true;
+	public Integer number = 5;
+	public Integer count = 100;
+	public Boolean choose = true;
+	public short value = 17;
+	
+	char t;
+	private String she;
+	protected int score;
+	
+	public final char getT() {
+		return t;
+	}
+	public final void setT(char t) {
+		this.t = t;
+	}
+	public final String getShe() {
+		return she;
+	}
+	public final void setShe(String she) {
+		this.she = she;
+	}
+	public final int getScore() {
+		return score;
+	}
+	public final void setScore(int score) {
+		this.score = score;
+	}
+	
+	
 }

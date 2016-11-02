@@ -38,7 +38,7 @@ public class StageScreen extends GdxScreen{
 
 	public <T> void generateStage(T object, Class<T> clazz){
 		try{
-			for(Field field : ClassReflection.getFields(clazz)){
+			for(Field field : ClassReflection.getDeclaredFields(clazz)){
 				field.setAccessible(true); //allow you to access restricted fields
 				table.add(new Label(field.getName(), getAsset("skin", Skin.class)));
 				//when working with Object type, using ' "" + object ' guarantees to output a string representation without throwing any exceptions.

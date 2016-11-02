@@ -1,23 +1,25 @@
 package com.algodal.gdxscreen_demo;
 
 public class SaveDataB {
-	private int numberA = 17;
-	private int numberB = 5;
-	private String hiAMe = "Sushi";
+	private Integer numberA;
+	private Integer numberB;
+	private String hiAMe;
+	private char yo;
+	private byte[] t;
 	
-	public final int getNumberA() {
+	public final Integer getNumberA() {
 		return numberA;
 	}
 	
-	public final void setNumberA(int numberA) {
+	public final void setNumberA(Integer numberA) {
 		this.numberA = numberA;
 	}
 	
-	public final int getNumberB() {
+	public final Integer getNumberB() {
 		return numberB;
 	}
 	
-	public final void setNumberB(int numberB) {
+	public final void setNumberB(Integer numberB) {
 		this.numberB = numberB;
 	}
 	
@@ -27,5 +29,33 @@ public class SaveDataB {
 	
 	public final void setHiAMe(String hiAMe) {
 		this.hiAMe = hiAMe;
+	}
+
+	/**
+	 * @return the yo
+	 */
+	public char getYo() {
+		return yo;
+	}
+
+	/**
+	 * @param yo the yo to set
+	 */
+	public void setYo(char yo) {
+		this.yo = yo;
+	}
+
+	/**
+	 * @return the t
+	 */
+	public byte[] getT() {
+		return t;
+	}
+
+	/**
+	 * @param t the t to set
+	 */
+	public void setT(byte[] t) {
+		this.t = t;
 	}
 }

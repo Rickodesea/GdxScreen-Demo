@@ -20,7 +20,17 @@ public class SaveScreen extends StageScreen{
 	@Override
 	public void create() {
 		super.create();
+		SaveDataB subData = new SaveDataB();
+		subData.setHiAMe("Hey, Alrick");
+		subData.setNumberA(40);
+		subData.setNumberB(95);
+		subData.setYo('A');
+		subData.setT("B".getBytes());
 		data = new SaveDataA();
+		data.setDog(subData);
+		data.setAvg(0.97f);
+		data.setGirlfriend(false);
+		data.doesWork = "Yes";
 		save = new GdxSave(Gdx.files.local("SaveDataForGdxScreenDemo.txt"), "TestingGdxSave");
 		save.getPlainOldJavaObjects().add(data); //Remember to add your object that you want to save.
 		String string = save.save();

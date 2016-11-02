@@ -15,6 +15,9 @@ public class PrefScreen extends StageScreen{
 	public void create() {
 		super.create();
 		gdxPrefs = new GdxPrefs<>("GdxScreenDemoTestPrefs", Prefs.class);
+		gdxPrefs.object.setScore(95);
+		gdxPrefs.object.setShe("Kimberly");
+		gdxPrefs.object.setT('G');
 		
 		play = new TextButton("PLAY", (Skin)getAsset("skin"));
 		back = new TextButton("BACK", (Skin)getAsset("skin"));
