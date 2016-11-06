@@ -1,5 +1,5 @@
-<group name="TestingGdxSave" time="Wed Nov 02 12:14:41 EST 2016" count="1">
+<group name="TestingGdxSave" time="Sat Nov 05 21:16:29 EST 2016" count="1">
 	<unit id="0">
-		{class:com.algodal.gdxscreen_demo.SaveDataA,dog:{numberA:40,numberB:95,hiAMe:"Hey, Alrick",yo:A,t:[66]},avg:0.97,girlfriend:false,doesWork:No}
+		{class:com.algodal.gdxscreen_demo.SaveDataA,dog:{numberA:40,numberB:95,hiAMe:"Hey, Alrick",yo:A,t:[66]},avg:0.97,girlfriend:false,doesWork:Yes}
 	</unit>
 </group>

@@ -21,6 +21,7 @@ allprojects {
         box2DLightsVersion = '1.4'
         ashleyVersion = '1.7.0'
         aiVersion = '1.8.0'
+        GdxScreenVersion = '0.0.6' //ADDED FOR THE GDXSCREEN VERSION
     }
 
     repositories {
@@ -48,7 +49,7 @@ project(":core") {
 
     dependencies {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
-        //compile fileTree(dir: 'libs', include: ['*.jar'])
+        compile "com.github.rickodesea.gdxscreen:gdxscreen:$GdxScreenVersion" //ADDED TO INCLUDE GDXSCREEN IN THE PROJECT
     }
 }
 
