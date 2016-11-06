@@ -59,11 +59,15 @@ public class PlayScreen extends GdxScreen{
 
 	@Override
 	public void render(float delta) {
-		batch.begin();
-		batch.draw((Texture)getAsset("bad"), 0, 0, 640, 480);
-		batch.end();
-		
-		stage.act(delta);
-		stage.draw();
+		if(!isGamePaused()){//ADDED IN VERSION 0.0.7
+			batch.begin();
+			batch.draw((Texture)getAsset("bad"), 0, 0, 640, 480);
+			batch.end();
+			
+			stage.act(delta);
+			stage.draw();
+		}else{
+			System.out.println("Game is pausing......");
+		}
 	}
 }

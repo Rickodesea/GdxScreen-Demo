@@ -6,6 +6,7 @@ import com.algodal.gdxscreen.utils.GdxLibrary.Content;
 import com.badlogic.gdx.assets.AssetDescriptor;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
@@ -143,6 +144,9 @@ public class DemoGame extends GdxGame {
 		//ENSURE YOU INITIALIZE THE LIBRARY'S CONTENTS
 		//you can do it individual with each content or as a whole as here
 		library.create();
+		
+		//SET THE BACKGROUND CLEAR COLOR; ADDED IN VERSION 0.0.7
+		clearColor.set(Color.GREEN);
 	}
 
 	@Override

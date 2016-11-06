@@ -58,7 +58,7 @@ public class BarTransition extends GdxTransition{
 	@Override
 	public void render(float delta) {
 		shape.begin(ShapeType.Filled);
-		shape.rect(0, 0, 640 * getNewScreenAssetProgress(), 480);
+		shape.rect(0, 0, Gdx.graphics.getWidth() * getNewScreenAssetProgress(), Gdx.graphics.getHeight());
 		shape.setColor(Color.BLACK);
 		shape.end();
 		
